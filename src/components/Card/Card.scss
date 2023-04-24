@@ -1,0 +1,25 @@
+@use "../../sass/variables" as *;
+
+.Card {
+  box-sizing: border-box;
+  border: 2px solid $color-primary;
+  width: 200px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  img {
+    width: 100%; /* set the image width to 100% to fill the container */
+    height: 170px; /* adjust to your desired height */
+    object-fit: cover; /* to scale the image while maintaining aspect ratio */
+  }
+
+  .beer-name {
+    text-align: center;
+    color: $color-primary;
+  }
+  .beer-description {
+    text-align: center;
+  }
+}

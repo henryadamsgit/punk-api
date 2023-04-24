@@ -1,0 +1,15 @@
+@use "../../sass/variables" as *;
+
+.CardList {
+  box-sizing: border-box;
+  border: 2px solid $color-primary;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

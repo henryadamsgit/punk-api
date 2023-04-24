@@ -1,0 +1,6 @@
+@use "../../sass/variables" as *;
+
+.Main {
+  box-sizing: border-box;
+  border: 2px solid $color-primary;
+}
