@@ -2,7 +2,7 @@ import "./SideNav.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
 
 const Nav = (props) => {
-  const { handleInput, searchItem } = props;
+  const { handleFilterClick, handleInput, searchItem } = props;
 
   return (
     <div className="SideNav">
@@ -13,7 +13,8 @@ const Nav = (props) => {
         className="search"
       />
       <div className="filter-buttons">
-        <p>High ABV (&gt; 6.0%)</p> <button>Press Me</button>
+        <p>High ABV (&gt; 6.0%)</p>{" "}
+        <button onClick={handleFilterClick}>Press Me</button>
         <p>Classic Range</p> <button>Press Me</button>
         <p>Acidic (ph &lt; 4)</p> <button>Press Me</button>
       </div>
@@ -22,3 +23,5 @@ const Nav = (props) => {
 };
 
 export default Nav;
+
+//onClick={handleFilterClick} onClick={filterForClassic} onClick={filterForAcidic}

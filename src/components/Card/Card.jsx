@@ -9,7 +9,8 @@ const limitDescription = (description, limit = 20) => {
   return description;
 };
 
-const Card = ({ beer, searchItem }) => {
+const Card = ({ beer }) => {
+  console.log(beer);
   const limitedDescription = limitDescription(beer.description);
 
   return (
@@ -17,6 +18,7 @@ const Card = ({ beer, searchItem }) => {
       <img src={beer.image_url} alt="beer-images" />
       <h3 className="beer-name">{beer.name}</h3>
       <p className="beer-description">{limitedDescription}</p>
+      <p className="beer-abv">{beer.abv}</p>
     </div>
   );
 };
