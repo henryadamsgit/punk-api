@@ -1,16 +1,17 @@
-import { useState, React } from "react";
 import "./SideNav.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
 
 const Nav = (props) => {
-  const [searchItem, setSearchItem] = useState("");
-
-  //const handleInput = (event) => {
-  // setSearchTerm(event.target.value);
+  const { handleInput, searchItem } = props;
 
   return (
     <div className="SideNav">
-      <SearchBox className="search" />
+      <SearchBox
+        label="Search beers"
+        value={searchItem}
+        handleInput={handleInput}
+        className="search"
+      />
       <div className="filter-buttons">
         <p>High ABV (&gt; 6.0%)</p> <button>Press Me</button>
         <p>Classic Range</p> <button>Press Me</button>

@@ -9,7 +9,7 @@ const limitDescription = (description, limit = 20) => {
   return description;
 };
 
-const Card = ({ beer }) => {
+const Card = ({ beer, searchItem }) => {
   const limitedDescription = limitDescription(beer.description);
 
   return (

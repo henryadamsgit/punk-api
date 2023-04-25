@@ -3,6 +3,7 @@
 .Card {
   box-sizing: border-box;
   border: 2px solid $color-primary;
+  border-radius: 5px;
   width: 200px;
   height: 350px;
   display: flex;
