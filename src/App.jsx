@@ -25,6 +25,7 @@ const App = () => {
     if (filterPH) {
       urlWithFilters += `?ph_lt=4`;
     }
+
     const res = await fetch(urlWithFilters);
     const data = await res.json();
     console.log(data);
@@ -59,6 +60,11 @@ const App = () => {
     }
   };
 
+  const resetFilters = () => {
+    setFilterABV(false);
+    setFilterClassic(false);
+  };
+
   return (
     <>
       <div className="App">
@@ -66,12 +72,19 @@ const App = () => {
           searchItem={searchItem}
           handleInput={handleInput}
           handleClick={handleClick}
+          resetFilters={resetFilters}
         />
         <Main
           beers={filteredBeers}
           searchItem={searchItem}
           handleClick={handleClick}
         />
+        {filteredBeers.length === 0 && (
+          <p>
+            ❌🍺 No beers found 😢 Please try a different search or filter
+            option.
+          </p>
+        )}
       </div>
     </>
   );

@@ -2,14 +2,9 @@ import React from "react";
 import "./Main.scss";
 import CardList from "../CardList/CardList";
 
-const Main = ({ beers, searchItem, displayedBeers, handleClick }) => {
+const Main = ({ beers, searchItem, handleClick }) => {
   return (
-    <CardList
-      beers={beers}
-      searchItem={searchItem}
-      displayedBeers={displayedBeers}
-      handleClick={handleClick}
-    />
+    <CardList beers={beers} searchItem={searchItem} handleClick={handleClick} />
   );
 };
 

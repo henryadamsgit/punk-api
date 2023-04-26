@@ -2,7 +2,7 @@ import "./SideNav.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
 
 const Nav = (props) => {
-  const { handleClick, handleInput, searchItem } = props;
+  const { handleClick, handleInput, searchItem, resetFilters } = props;
 
   return (
     <div className="SideNav">
@@ -25,6 +25,7 @@ const Nav = (props) => {
         <button value="buttonPH" onClick={handleClick}>
           Press Me
         </button>
+        <button onClick={resetFilters}>Reset</button>
       </div>
     </div>
   );
