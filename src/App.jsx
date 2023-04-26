@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { React, useState, useEffect } from "react";
 import "./App.scss";
 import Main from "./components/Main/Main";
@@ -66,7 +67,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <Router>
       <div className="App">
         <SideNav
           searchItem={searchItem}
@@ -74,19 +75,28 @@ const App = () => {
           handleClick={handleClick}
           resetFilters={resetFilters}
         />
-        <Main
-          beers={filteredBeers}
-          searchItem={searchItem}
-          handleClick={handleClick}
-        />
-        {filteredBeers.length === 0 && (
-          <p>
-            ❌🍺 No beers found 😢 Please try a different search or filter
-            option.
-          </p>
-        )}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Main
+                  beers={filteredBeers}
+                  searchItem={searchItem}
+                  handleClick={handleClick}
+                />
+                {filteredBeers.length === 0 && (
+                  <p>
+                    ❌🍺 No beers found 😢 Please try a different search or
+                    filter option.
+                  </p>
+                )}
+              </>
+            }
+          />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 };
 
