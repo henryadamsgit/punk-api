@@ -10,7 +10,6 @@ const limitDescription = (description, limit = 20) => {
 };
 
 const Card = ({ beer }) => {
-  console.log(beer);
   const limitedDescription = limitDescription(beer.description);
 
   return (
