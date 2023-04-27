@@ -11,10 +11,13 @@ const limitDescription = (description, limit = 30) => {
 };
 
 const BeerDetails = ({ beers }) => {
-  const limitedDescription = limitDescription(beer.description);
-
   const { id } = useParams();
-  const beer = beers.find((beer) => beer.id === id);
+
+  const beer = beers.find((beer) => beer.id == id);
+
+  
+
+  const limitedDescription = limitDescription(beer.description);
 
   return (
     <div className="BeerDetails">
