@@ -1,15 +1,18 @@
+@use "../../sass/variables" as *;
+
 .beer-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #4193b6;
+  background-color: $color-primary;
+  color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 60px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  margin-left: 270px;
+  margin-left: 490px;
   width: 70%;
-  height: 600px;
+  height: 630px;
 }
 
 .beer-name {
@@ -20,25 +23,39 @@
 }
 
 .beer-img {
-  width: 100%;
-  max-width: 50px;
-  max-height: 200px;
+  max-width: auto;
+  max-height: 300px;
   margin-bottom: 20px;
 }
 
 .beer-food {
-  font-size: 1rem;
+  font-size: 1.2git rem;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .beer-info {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .beer-tips {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
+}
+
+.button-return {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.button-return:hover {
+  background-color: black;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  color: white;
 }

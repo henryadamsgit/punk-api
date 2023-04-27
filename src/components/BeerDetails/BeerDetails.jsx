@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./BeerDetails.scss";
+import HomeButton from "../HomeButton/HomeButton";
 
 const limitDescription = (description, limit = 30) => {
   const words = description.split(" ");
@@ -21,12 +22,13 @@ const BeerDetails = ({ beers }) => {
       {beer?.name && (
         <>
           <h2 className="beer-name">{beer.name}</h2>
-          <img className="beer-img"src={beer.image_url} alt="beer-img" />
+          <img className="beer-img" src={beer.image_url} alt="beer-img" />
           <p className="beer-food">
             🌭Best Food Pairings: {beer.food_pairing.join(", ")}
           </p>
           <p className="beer-info">ℹ️More Info: {limitedDescription}</p>
           <p className="beer-tips">🍺Brewer's Tips: {beer.brewers_tips}</p>
+          <HomeButton className="button-return">Return</HomeButton>
         </>
       )}
     </section>

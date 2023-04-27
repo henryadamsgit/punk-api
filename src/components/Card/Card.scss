@@ -57,3 +57,8 @@
     align-items: center;
   }
 }
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 $color-primary;
+  transform: translateY(-5px);
+}
