@@ -14,17 +14,14 @@ const BeerDetails = ({ beers }) => {
   const { id } = useParams();
 
   const beer = beers.find((beer) => beer.id == id);
-
-  
-
   const limitedDescription = limitDescription(beer.description);
 
   return (
-    <div className="BeerDetails">
+    <section className="beer-details">
       {beer?.name && (
         <>
           <h2 className="beer-name">{beer.name}</h2>
-          <img src={beer.image_url} alt="beer-img" />
+          <img className="beer-img"src={beer.image_url} alt="beer-img" />
           <p className="beer-food">
             🌭Best Food Pairings: {beer.food_pairing.join(", ")}
           </p>
@@ -32,7 +29,7 @@ const BeerDetails = ({ beers }) => {
           <p className="beer-tips">🍺Brewer's Tips: {beer.brewers_tips}</p>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

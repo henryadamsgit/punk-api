@@ -2,14 +2,21 @@
 
 .CardList {
   box-sizing: border-box;
-  border: 2px solid $color-primary;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
+  padding-left: 220px;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.active-link {
+  text-decoration: none;
+  color: #ff00ea;
+  /* or any other styles you want */
 }

@@ -4,6 +4,14 @@
   box-sizing: border-box;
   border: 5px solid $color-primary;
   padding: 10px 10px 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
 
   p {
     color: $color-primary;

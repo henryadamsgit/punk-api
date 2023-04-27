@@ -1,8 +1,12 @@
 @use "sass/variables" as *;
 
 .App {
-  box-sizing: border-box;
   padding: 20px 20px 20px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1000px;
 }
+
+// body {
+//   background-color: black;
+// }

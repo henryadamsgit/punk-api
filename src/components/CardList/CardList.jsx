@@ -1,20 +1,24 @@
 import React from "react";
 import "./CardList.scss";
 import Card from "../Card/Card";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const CardList = ({ beers, searchItem, handleClick }) => {
   return (
     <div className="CardList">
       <section className="cards">
         {beers.map((beer) => (
-          <Link to={`/beers/${beer.id}`} key={beer.id}>
+          <NavLink
+            to={`/beers/${beer.id}`}
+            key={beer.id}
+            className="active-link"
+          >
             <Card
               beer={beer}
               searchItem={searchItem}
               handleClick={handleClick}
             />
-          </Link>
+          </NavLink>
         ))}
       </section>
     </div>
