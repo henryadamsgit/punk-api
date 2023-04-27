@@ -4,7 +4,31 @@
   padding: 20px 20px 20px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1000px;
+}
+
+.displayMessage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  max-width: 50%;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.displayMessage h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff5858;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 // body {

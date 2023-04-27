@@ -35,7 +35,6 @@ const App = () => {
     setBeers(data);
   };
 
-
   const filterByPH = (beers) => {
     return beers.filter((beer) => beer.ph < 4);
   };
@@ -100,10 +99,10 @@ const App = () => {
                   handleClick={handleClick}
                 />
                 {filteredBeers.length === 0 && (
-                  <p>
+                  <h1 className="displayMessage">
                     ❌🍺 No beers found 😢 Please try a different search or
                     filter option.
-                  </p>
+                  </h1>
                 )}
               </>
             }

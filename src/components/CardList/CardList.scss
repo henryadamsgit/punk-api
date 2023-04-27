@@ -11,12 +11,11 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
 }
 
 .active-link {
   text-decoration: none;
   color: #ff00ea;
-  /* or any other styles you want */
 }

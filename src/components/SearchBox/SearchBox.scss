@@ -6,6 +6,8 @@
 
   &__label {
     font-size: 20px;
+    text-align: center;
+    padding-right: 5px;
   }
 
   &__input {
@@ -15,6 +17,7 @@
     border: 5px grey solid;
     border-radius: 15px;
     color: black;
+    min-width: 100px;
 
     &:focus {
       border: 5px $color-primary solid;

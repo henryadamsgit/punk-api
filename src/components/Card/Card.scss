@@ -2,8 +2,8 @@
 
 .card {
   box-sizing: border-box;
-  width: 250px;
-  height: 600px;
+  width: 190px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,27 +17,43 @@
     text-align: center;
     color: $color-primary;
     font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: auto;
   }
 
   &-tagline {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #161616;
+    font-family: $font-secondary;
+    height: 80px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   &-image {
     width: 95%;
-    height: 400px;
+    height: 200px;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
+    margin-bottom: 10px;
+    margin-top: auto;
   }
 
-  &--abv {
-    font-size: 14px;
-    color: #101010;
-    margin-top: 10px;
+  &-abv {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: red;
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }

@@ -7,25 +7,27 @@ const Nav = (props) => {
   return (
     <div className="SideNav">
       <SearchBox
-        label="Search beers"
+        label="Search any beer ⬇️"
         value={searchItem}
         handleInput={handleInput}
         className="search"
       />
       <div className="filter-buttons">
-        <p>High ABV (&gt; 6.0%)</p>{" "}
+        <p> High ABV </p>{" "}
         <button value="buttonABV" onClick={handleClick}>
-          Press Me
+          Click
         </button>
         <p>Classic Range</p>{" "}
         <button value="buttonClassic" onClick={handleClick}>
-          Press Me
+          Click
         </button>
-        <p>Acidic (ph &lt; 4)</p>{" "}
+        <p>Acidic</p>{" "}
         <button value="buttonPH" onClick={handleClick}>
-          Press Me
+          Click
         </button>
-        <button onClick={resetFilters}>Reset</button>
+        <button id="buttonReset" onClick={resetFilters}>
+          Reset
+        </button>
       </div>
     </div>
   );
