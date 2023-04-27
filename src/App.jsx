@@ -35,7 +35,6 @@ const App = () => {
     setBeers(data);
   };
 
-
   const filterByPH = (beers) => {
     return beers.filter((beer) => beer.ph < 4);
   };
