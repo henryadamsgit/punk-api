@@ -1,7 +1,6 @@
 import React from "react";
 import "./Main.scss";
 import CardList from "../CardList/CardList";
-import { Link } from "react-router-dom";
 
 const Main = ({ beers, searchItem, handleClick }) => {
   return (
