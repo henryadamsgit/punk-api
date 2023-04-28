@@ -80,37 +80,35 @@ const App = () => {
   };
 
   return (
-    <Router>
-      <div className="App">
-        <SideNav
-          searchItem={searchItem}
-          handleInput={handleInput}
-          handleClick={handleClick}
-          resetFilters={resetFilters}
+    <div className="App">
+      <SideNav
+        searchItem={searchItem}
+        handleInput={handleInput}
+        handleClick={handleClick}
+        resetFilters={resetFilters}
+      />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Main
+                beers={filteredBeers}
+                searchItem={searchItem}
+                handleClick={handleClick}
+              />
+              {filteredBeers.length === 0 && (
+                <h1 className="displayMessage">
+                  ❌🍺 No beers found 😢 Please try a different search or filter
+                  option.
+                </h1>
+              )}
+            </>
+          }
         />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Main
-                  beers={filteredBeers}
-                  searchItem={searchItem}
-                  handleClick={handleClick}
-                />
-                {filteredBeers.length === 0 && (
-                  <h1 className="displayMessage">
-                    ❌🍺 No beers found 😢 Please try a different search or
-                    filter option.
-                  </h1>
-                )}
-              </>
-            }
-          />
-          <Route path="/beers/:id" element={<BeerDetails beers={beers} />} />
-        </Routes>
-      </div>
-    </Router>
+        <Route path="/beers/:id" element={<BeerDetails beers={beers} />} />
+      </Routes>
+    </div>
   );
 };
 
