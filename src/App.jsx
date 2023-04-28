@@ -14,15 +14,15 @@ const App = () => {
   const [filterPH, setFilterPH] = useState(false);
 
   const getBeers = async (filterABV, filterClassic, filterPH) => {
-    const url = "https://api.punkapi.com/v2/beers";
+    const url = "https://api.punkapi.com/v2/beers?page=2&per_page=80";
     let urlWithFilters = url;
 
     if (filterABV) {
-      urlWithFilters += `?abv_gt=6`;
+      urlWithFilters += `&abv_gt=6`;
     }
 
     if (filterClassic) {
-      urlWithFilters += `?brewed_before=1-2010`;
+      urlWithFilters += `&brewed_before=1-2010`;
     }
 
     if (filterPH) {
