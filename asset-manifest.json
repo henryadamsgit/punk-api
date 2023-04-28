@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/punk-api-project/static/css/main.42c74cf7.css",
-    "main.js": "/punk-api-project/static/js/main.530d9117.js",
-    "static/js/787.338a2a18.chunk.js": "/punk-api-project/static/js/787.338a2a18.chunk.js",
-    "index.html": "/punk-api-project/index.html",
-    "main.42c74cf7.css.map": "/punk-api-project/static/css/main.42c74cf7.css.map",
-    "main.530d9117.js.map": "/punk-api-project/static/js/main.530d9117.js.map",
-    "787.338a2a18.chunk.js.map": "/punk-api-project/static/js/787.338a2a18.chunk.js.map"
+    "main.css": "/punk-api-project-real/static/css/main.42c74cf7.css",
+    "main.js": "/punk-api-project-real/static/js/main.e2aad08a.js",
+    "static/js/787.338a2a18.chunk.js": "/punk-api-project-real/static/js/787.338a2a18.chunk.js",
+    "index.html": "/punk-api-project-real/index.html",
+    "main.42c74cf7.css.map": "/punk-api-project-real/static/css/main.42c74cf7.css.map",
+    "main.e2aad08a.js.map": "/punk-api-project-real/static/js/main.e2aad08a.js.map",
+    "787.338a2a18.chunk.js.map": "/punk-api-project-real/static/js/787.338a2a18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.42c74cf7.css",
-    "static/js/main.530d9117.js"
+    "static/js/main.e2aad08a.js"
   ]
 }
