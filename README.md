@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+![Punk API](src/assets/Screenshot%202023-06-15%20at%2018.29.02.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+--PUNK API--
 
-## Available Scripts
+This project is a web application that allows users to explore a variety of beers obtained from the Punk API. Users can filter the beer collection based on different criteria and search for specific beers using keywords.
 
-In the project directory, you can run:
+--Features--
 
-### `npm start`
+Beer Filtering: Users can apply filters to the beer collection based on various attributes. The available filters include ABV (Alcohol By Volume) greater than 6%, brewed before 2010, and pH value less than 4.
+Search Functionality: Users can search for specific beers by entering keywords in the search bar. The application dynamically updates the beer list based on the search input.
+Beer Details: Users can click on individual beers to view detailed information about them, including their name, description, and other relevant details.
+Responsive Design: The application is designed to be responsive, ensuring a seamless user experience across different devices and screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+--Technology Stack-- 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React: The frontend of the application is built using React, a popular JavaScript library for building user interfaces. React enables efficient rendering of components, dynamic updates, and smooth interactivity.
+React Router: React Router is utilized to handle routing within the application, enabling navigation between different pages and components.
+Punk API: The Punk API serves as the source of beer data for the application. It provides a comprehensive collection of beers with associated attributes such as ABV, description, and more.
+CSS (SCSS): The application is styled using SCSS, a CSS preprocessor, to enhance maintainability and modularity of the stylesheets.
