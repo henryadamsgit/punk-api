@@ -1,4 +1,4 @@
-![Punk API](src/assets/Screenshot%202023-06-15%20at%2018.29.02.png)
+![Punk API](src/assets/Screenshot 2023-06-15 at 18.29.02.png)
 
 --PUNK API--
 
@@ -11,7 +11,8 @@ Search Functionality: Users can search for specific beers by entering keywords i
 Beer Details: Users can click on individual beers to view detailed information about them, including their name, description, and other relevant details.
 Responsive Design: The application is designed to be responsive, ensuring a seamless user experience across different devices and screen sizes.
 
---Technology Stack-- 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 React: The frontend of the application is built using React, a popular JavaScript library for building user interfaces. React enables efficient rendering of components, dynamic updates, and smooth interactivity.
 React Router: React Router is utilized to handle routing within the application, enabling navigation between different pages and components.
