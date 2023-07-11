@@ -1,5 +1,4 @@
-![Punk API](src/assets/Screenshot%2023-06-15%at%18.29.02.png)
-![Punk API](src/assets/Screenshot 2023-06-15 at 18.29.02.png)
+![Punk API](src/assets/images/Screenshot%202023-06-15%20at%2018.29.02.png)
 
 --PUNK API--
 
